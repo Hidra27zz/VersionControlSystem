@@ -80,4 +80,5 @@ Cách thức hoạt động của Gitgnore:
 ## 7. GIT BRANCHES
 - Branch là một bản sao của một project Git mà tại đó bạn có thể thay đổi bất cứ khi nào và sau đó kết hợp với project gốc. Các hoạt động trên mỗi branch là riêng biệt, không gây bất kỳ ảnh hưởng nào đến cách branch khác nên có thể tiến hành thay đổi đồng thời trên một repository. Trong bài giảng này bạn sẽ học cách tạo một nhánh mới.
 - Bạn sẽ tạo một nhánh (branch) mới với câu lệnh:
-- 
+          - git checkout -b "ten branch"
+        
