@@ -77,6 +77,15 @@
 
 **Trường hợp 4: Theo dõi những thay đổi hai lần commit**
 - Chúng ta có thể theo dõi những thay đổi giữa hai commit khác nhau, dù cho đó là lần commit mới nhất hay lần commit cũ. Nhưng điều bắt buộc cho việc này là chúng ta phải có một danh sách các commit để chúng ta commit để chúng ta so sánh. Lệnh để bạn có thể quan sát liệt kê tất cả các commit gần đây là git log.
-     >git log   
+    >git log   
 - Ví dụ bạn muốn theo dõi thay đổi của một commit trước đó. Ta sẽ cần các commit của file được chỉ định đó. Để làm được điều đó bạn cần chạy lệnh Git log như sau:
-- 
+    >git log -p --follow - ten file
+- Như vậy là bạn đã có tất cả commit của file newfile1.txt, bạn muốn theo dõi giữa 2 commit, lệnh Git diff cho phép theo dõi những thay đổi giữa 2 lần commit sẽ là:
+    >git diff `<commit1-sha>` `<commit2-sha>`
+- Lệnh trên sẽ hiển thị các thay đổi giữa 2 lần commit:
+![image](https://github.com/Nan27Hid/VersionControlSystem/assets/135946173/39c2a025-0b00-42cd-80f8-966655b225a6)
+
+**Trường hợp 5: Theo dõi sự khác biệt giữa 2 branch**
+- Giống với theo dõi sự thay đổi giữa 2 lần commit bên trên. Để có thể xem xét sự khác biệt, thay đổi giữa 2 branch, bạn sẽ sử dụng câu lệnh:
+    >git diff branch1 branch2
+    
